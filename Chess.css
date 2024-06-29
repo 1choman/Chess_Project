@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 10px;
+  color: aliceblue;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.divv {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  font-size: 0px;
+}
+
+.box {
+  margin: .1px;
+  width: 85px;
+  height: 70px;
+}
+
+#tog {
+  margin: 2px 0px;
+}
+
+.allimg {
+  width: 45px;
+  position: relative;
+  bottom: 5px;
+}
+
+.allpawn {
+  transform: scale(0.7);
+}
+
+.authcont {
+  width: 100vw;
+}
+
+.author {
+  float: right;
+  margin-right: 50px;
+}
+
+@media (max-width: 650px) {
+  #tog {
+    margin-bottom: 70px;
+  }
+
+  .box {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .allimg {
+    width: 7vw;
+  }
+}
+
+/* Keyframes for the animation */
+@keyframes exampleAnimation {
+  0% {
+    color: rgb(255, 255, 255);
+    transform: scale(1);
+  }
+  50% {
+    color: rgb(146, 170, 196);
+    transform: scale(1.1);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to h2 */
+h2 {
+  color: rgb(255, 255, 255);
+  animation: exampleAnimation 3s infinite;
+}
+/* ------------------------------------------------------------------------------------------- */
